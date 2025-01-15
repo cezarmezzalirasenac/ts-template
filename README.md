@@ -11,7 +11,7 @@ Pacotes instalados:
     "typescript": "^5.7.2"
   },
   "dependencies": {
-    "@codeea/scanner": "^1.0.2"
+    "@codeea/scanner": "^1.0.3"
   }
   ...
 ```
