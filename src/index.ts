@@ -1,22 +1,15 @@
-import Animal from "./animal";
+import Scanner from "@codeea/scanner";
 
-const cavalos: Animal[] = [
-  new Animal("cavalo", "manga larga", "marrom", 1.9, "M"),
-  new Animal("cavalo", "crioulo", "marrom", 1.9, "M"),
-  new Animal("cavalo", "marchador", "marrom", 1.9, "M"),
-];
+console.log("Olá mundo");
 
-for (const cavalo of cavalos) {
-  const { especie, raca, cor, tamanho, sexo } = cavalo;
-  const racaCor = cavalo.getRacaCor();
-  cavalo.nome = ""
+const scanner = new Scanner();
 
-  console.log(`
-    Espécie: ${especie}
-    Raça: ${raca}
-    Cor: ${cor}
-    Tamanho: ${tamanho}
-    Sexo: ${sexo}
-    Raça e Cor ${racaCor}
-    `);
-}
+const text = scanner.question("Informe um texto");
+const floatNumber = scanner.questionFloat("Informe um número com decimal");
+const intNumber = scanner.question("Informe um número inteiro");
+
+console.log("Texto ", text);
+console.log("Número Decimal", floatNumber);
+console.log("Número Inteiro ", intNumber);
+
+scanner.close();
